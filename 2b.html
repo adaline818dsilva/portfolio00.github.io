@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Demo</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: rgb(224, 36, 36);
+        }
+        .scrolling-text{
+            white-space: nowrap;
+            overflow: hidden;
+            animation: scrolText 15s linear infinite;
+
+        }
+        @keyframes scrolText{
+            0%{transform:translateX(0%);}
+            100%{transform: translateX(100%);}
+        }
+        .blinking-Text{
+            animation: blinkText 2s infinite;
+        }
+        @keyframes  blinkText{
+                0%, 100%{opacity: 1;}
+                50%{opacity: 0;}
+            }
+    </style>
+</head>
+<body>
+    <div class="scrolling-text">
+        <h1>sdfghytrgfhyj</h1>
+        
+    </div>
+    <div class="blinking-Text">
+        <h1>this text blinks</h1>
+    </div>
+
+    
+</body>
+</html>
